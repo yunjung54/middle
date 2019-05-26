@@ -1,0 +1,273 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='pont'>
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">LIKELION</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#fat">자기소개 </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#mdo">아이디어</a>
+                </li>
+            </ul>
+        </nav>
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <div class='aa'>
+                <p id="fat">
+                    <div class='container'>
+                        <div class='bb'>Introduce myself</div>
+                </p>
+                
+                <div class='cc'>
+                <p>이름 : 엄윤정<br>
+                    나이 : 22살<br>
+                    전공 : 기계공학전공中<br>
+                    좌우명 : 기회가 온다면 잡을 수 있도록 끊임없이 노력하자<br>
+                    좌우명2 : 누군가에게 도움이 되는 사람, 계속 성장하는 사람이 되자<br>
+                    좋아하는 색 : 빨간빨간빨강♥
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <div class='ee'>
+        <div class='container'>
+            <p id="mdo"><div class='bb'>
+                멋쟁이 사자에 있으면서 구현하고픈 아이디어</div></p>
+            <div class='dd'>기계과에서 공부하면서 문득 든 의문과 생각이 있었다.<br>
+                왜 우리는 학생때 무언가를 만들 기회가 별로 없는 걸까?<br>
+                생각보다 적은 실습량으로 어떻게 내 실력을 늘릴 수 있을까를 고민하던 와중,<br>
+                다른과 친구가 나에게 고민을 털어놨었다.<br>
+                자신이 prototype을 제작 하는데 3d프린터를 사용하는데도 업체는 돈이 너무많이 들 뿐더러,<br>
+                3차원 형상을 프로그램을 가지고서 만들거나 캐드를 그리는 법을 몰라 너무 힘들다는 것이였다.<br>
+                우리과에서는 기본적으로 배우기에 도와줄겸 그 친구의 고민을 해결해 주었었다.<br>
+                그러다가 아이디어가 떠올랐다.<br>
+                시간때우기 알바가 아닌, 정말 나에게 도움이 되는 알바를 찾는 학생들과<br>
+                업체에 맡기기엔 너무 소규모고 돈이 부담되는 학생들.<br>
+                이 둘을 이어줄 수 있는 사이트가 있다면 좋지 않을 까? 생각하게 되었고,<br>
+                이 아이디어를 가지고서 웹서비스를 구현하고 싶어졌다.<br>
+            </div>
+
+            </p>
+        </div>
+    </div>
+
+    <div class='ss'>
+        <div class='container'>
+        <br>
+        <h4 id="one"><div class='bb'>HOW? : 어떻게 아이디어를 구현할 것인가</div></h4>
+        <br>
+        </div>
+      </div> 
+      <br> 
+       
+<div class='container'>     
+ <div style=" float: left; width: 33%;" >
+    <!-- Button trigger modal -->
+<div class='gg' data-toggle="modal" data-target="#exampleModalCenter">
+        <img src="{% static 'ee.png' %}" width="350px" height="240px" alt="">
+</div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle1">의뢰를 받는 학생 & 의뢰를 하는 학생</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <div class='dd1'>의뢰를 받는 학생 & 의뢰를 하는 학생<br>
+                        회원가입 자체에서는 의뢰를 받는 사람과 의뢰를 하는 사람을 구별하지않고 학과만 정보를 쓰게 한다.<br>
+                        상황에 따라 자신이 의뢰를 하는 사람이 되거나 의뢰를 받는 사람이 될 수 있으므로,<br>
+                        게시글 종류를 선택 후(의뢰 받는 사람/의뢰 하는 사람) 글을 쓸 수 있게 만든다.<br>
+                        의뢰를 하는 사람은 자신이 남긴 의뢰 게시판에 달린 댓글을 보고 의뢰할 만한 사람을 선택하여 연락 후, 의뢰를 부탁한다.
+                    </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <div style=" float: left; width: 33%;" >
+<!-- Button trigger modal -->
+<div data-toggle="modal" data-target="#exampleModalScrollable">
+        <img src="{% static 'ww.png' %}" width="350px" height="240px alt="">
+</div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">별점제도</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <div class='dd1'>
+                            사기를 치거나 맡겼는데 제대로 하지 않을 경우를 대비하여 만든 별점제도.<br>
+                            돈과 자신의 평가가 걸려 있으므로 의뢰를 받는 사람을 정성을 들여 의뢰를 받을 것이다.
+                        </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             </div>
+          </div>
+        </div>
+      </div>    
+    </div>   
+  
+      
+    
+
+    <div style=" float: left; width: 33%;">
+<!-- Button trigger modal -->
+<div data-toggle="modal" data-target="#exampleModalLong">
+        <img src="{% static 'qq.png' %}" width="350px" height="240px" alt="">
+</div>
+<br>
+<br>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">카테고리 분류</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <div class='dd1'>대학별로 분류를 할 생각이다.<br>
+                        물론 다른 학교 사람끼리도 의뢰를 받거나 하는것이 가능하다.<br>
+                        그리고 교육을 이수하면 사용할 수 있는 기계들이 어떤것들이 있고,<br>
+                        학교내에서 사용이 가능한 기계들에 대해서도 설명을 붙여놓을 생각이다.
+             
+                     </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+</div>
+</div>
+</div>  
+       
+<br>
+<br>
+
+        <div class='container'>
+            <br>
+            <br>
+
+       <div class='bb2'>각오 한마디</div>
+        <div class='dd1'>
+            내가 하는 일들을 즐기면서 열심히 하고,<br>
+            이번 해커톤에서 내 아이디어를 직접 구현해 볼 수 있도록 실력을 향상 시키겟습니다!<br>
+            내 손으로 직접 내 아이디어를 구현하는 그날까지♥<br>
+            <br>
+            <br>
+        </div>
+    </div>
+    
+
+</body>
+</div>
+
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Song+Myung');
+    body{
+       background-color: rgb(255, 239, 239);
+       font-family: 'Do Hyeon';
+    }
+
+    .pont {
+        font-family: 'Do Hyeon';
+        color:  rgb(43, 42, 42);
+    }
+
+    .aa {
+        text-align: center;
+        font-size: 40px;
+        color:  rgb(43, 42, 42);
+        background-image: url('{%static "a1.png"%}' );
+        background-size: cover;
+        opacity: 0.7;
+        
+    }
+
+    .bb2 {
+        font-size: 60px;
+        text-align: left;
+    }
+    .bb {
+        font-size: 60px;
+        text-align: center;
+    }
+    .cc{
+        text-align: left;
+    }
+    .dd{
+        font-size: 30px;
+    }
+    .dd1{
+        font-size: 30px;
+    }
+    .ee{
+        background-image: url('{%static "a2.png"%}' );
+        color:  rgb(43, 42, 42);
+        background-size: cover;
+        opacity: 0.8;
+    }
+    .ss{
+        background-image: url('{%static "a3.png"%}' );
+    }
+    .red{
+        color: red;
+    }
+    .ff{
+        text-align: center;
+    }
+    .gg{
+        font-size: 50px;
+    }
+    .dd1{
+        text-align: left;
+    }
+</style>
